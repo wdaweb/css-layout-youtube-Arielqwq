@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>hw_youtube</title>
+  <!-- 頁籤圖示 -->
+  <link rel="icon" href="./images/favicon.png" type="image/x-icon">
+  <!-- font-awesome -->
+  <link rel="stylesheet" href="./css/all.css">
+  <!-- 自己的外部樣式 -->
+  <link rel="stylesheet" href="./css/style.css">
+  <!-- 自己的 reset -->
+  <link rel="stylesheet" href="./css/reset.css">
+</head>
+<!-- 用<p>包<i> -->
+<!-- sidebar/theme ul>li -->
+
+<body>
+  <!-- 左上_logo -->
+  <div id="ytLogo">
+    <div class="logo">
+      <!-- 調整hamburger menu大小>fa-lg -->
+      <span><i class="fa-solid fa-bars fa-lg"></i></span>
+      <span><a href="#"><img src="./images/yt.png" alt="Youtube首頁" title="Youtube首頁"></a></span>
+    </div>
+  </div>
+
+  <!-- 左下_sidebar -->
+  <div id="sidebar" class="">
+    <ul>
+      <!-- <a href=""> -->
+      <li title="首頁"><i class="fa-solid fa-house"></i>首頁</li>
+      <li title="探索"><i class="fa-regular fa-compass"></i>探索</li>
+      <li title="shorts"><i class="fa-solid fa-otter"></i>shorts</li>
+      <li title="訂閱內容"><i class="fa-brands fa-youtube"></i>訂閱內容</li>
+    </ul>
+
+    <ul>
+      <li title="媒體庫"><i class="fa-regular fa-folder-open"></i>媒體庫</li>
+      <li title="觀看紀錄"><i class="fa-solid fa-clock-rotate-left"></i>觀看紀錄</li>
+    </ul>
+
+    <ul>
+      <h1>探索</h1>
+      <li title="音樂"><i class="fa-solid fa-music"></i>音樂</li>
+      <li title="體育"><i class="fa-solid fa-medal"></i>體育</li>
+      <li title="遊戲"><i class="fa-solid fa-puzzle-piece"></i>遊戲</li>
+      <li title="電影"><i class="fa-solid fa-film"></i>電影</li>
+      <li title="新聞"><i class="fa-solid fa-square-rss"></i>新聞</li>
+      <li title="直播"><i class="fa-solid fa-heart"></i>直播</li>
+      <li title="360 影片"><i class="fa-solid fa-spinner"></i>360 影片</li>
+    </ul>
+
+    <ul>
+      <li title="瀏覽頻道"><i class="fa-solid fa-magnifying-glass" style="color: rgb(228, 51, 19)"></i>瀏覽頻道</li>
+      <li title="YouTube Premium"><i class="fa-brands fa-youtube" style="color: rgb(228, 51, 19)"></i>YouTube Premium
+      </li>
+      <li title="YouTube Music"><i class="fa-solid fa-music" style="color: rgb(228, 51, 19)"></i>YouTube Music</li>
+      <li title="YouTube Kids"><i class="fa-solid fa-baby-carriage" style="color: rgb(228, 51, 19)"></i>YouTube Kids
+      </li>
+      <li title="YouTube TV"><i class="fa-solid fa-display" style="color: rgb(228, 51, 19)"></i>YouTube TV</li>
+    </ul>
+
+    <ul>
+      <li title="設定"><i class="fa-solid fa-gear"></i>設定</li>
+      <li title="檢舉紀錄"><i class="fa-regular fa-flag"></i>檢舉紀錄</li>
+      <li title="說明"><i class="fa-regular fa-circle-question"></i>說明</li>
+      <li title="提供意見"><i class="fa-solid fa-circle-info"></i>提供意見</li>
+    </ul>
+
+    <ul>
+      <h4> &copy; 2022_yt 切版 </h4>
+    </ul>
+  </div>
+
+  <!-- 右上_header -->
+  <div id="header">
+    <div class="row">
+      <div class="search">
+        <ul>
+          <li>
+            <input type="text" placeholder="搜尋">
+            <i id="icon-maglass-left" class="fa-solid fa-magnifying-glass">
+            </i>
+          </li>
+          <li class="li_icon-maglass"><i id="icon-maglass" class="fa-solid fa-magnifying-glass"></i></li>
+          <li class="li_icon-mic"><i id="icon-mic" class="fa-solid fa-microphone"></i></li>
+        </ul>
+      </div>
+
+      <div class="login">
+        <i id="icon-elli" class="fa-solid fa-ellipsis-vertical fa-xl"></i>
+        <button><i class="fa-regular fa-circle-user fa-xl"></i>登入</button>
+      </div>
+
+    </div>
+    <div class="row">
+      <div class="theme">
+        <ul>
+          <li><a href="#" tabindex="0">全部</a> </li>
+          <li><a href="#" tabindex="0">音樂</a></li>
+          <li><a href="#" tabindex="0">直播中</a></li>
+          <li><a href="#" tabindex="0">烹飪節目</a></li>
+          <li><a href="#" tabindex="0">觀光</a></li>
+          <li><a href="#" tabindex="0">手工藝</a></li>
+          <li><a href="#" tabindex="0">自然</a></li>
+          <li><a href="#" tabindex="0">遊戲</a></li>
+          <li><a href="#" tabindex="0">最新上傳</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- 右下_content -->
+  <div id="content">
+    <div id="container">
+      <div class="row">
+        <div class="col">
+          <div class="card">
+            <div class="card-head">
+              <img
+                src="https://i.ytimg.com/vi/13WQj5n1qbQ/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLA9Lns2UF5Q2qsXiX_7GjuxYzmvfQ">
+            </div>
+            <div class="card-body">
+              <div class="body-left">
+                <img class="body-left"
+                  src="https://yt3.ggpht.com/ytc/AMLnZu9P0hwvR8e94DihAgSQHpJ3d1edi4hSFxV4ndoSNg=s68-c-k-c0x00ffffff-no-rj">
+              </div>
+              <div class="body-right">
+                <h4>【千千進食中】吃爆泰國曼谷百年老店！TALAT PHLU噗市場美食一條街，移居曼谷推起來？ft.Kimmy握握手｜泰國行EP.7 </h4>
+                <h3>千千進食中</h3>
+                <p>觀看次數：355,960次，4 天前</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card">
+            <div class="card-head">
+              <img
+                src="https://i.ytimg.com/vi/qo3H-VgXmHE/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCVOH3C3mgaLM07wYVpO3pdUpwc2A">
+            </div>
+            <div class="card-body">
+              <img class="body-left"
+                src="https://yt3.ggpht.com/ytc/AMLnZu9VpU5CzVuYStuy8R0vGgvuNZGmYzINw3sfs15f=s68-c-k-c0x00ffffff-no-rj">
+              <div class="body-right">
+                <h4>阿翰po影片 │算命阿姨 九天玄女之天女散花</h4>
+                <h3>阿翰po影片</h3>
+                <p>觀看次數：11,624,813次，5 個月前</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card">
+            <div class="card-head">
+              <img
+                src="https://i.ytimg.com/vi/vYvpwmzRseQ/hq720.jpg?sqp=-…AFwAcABBg==&rs=AOn4CLD9l62QQHpzzYWtfnEOS6PjIB3A_A">
+            </div>
+            <div class="card-body">
+              <img class="body-left"
+                src="https://yt3.ggpht.com/ytc/AMLnZu8TSNsclFraIjceYhhiPRSGYfH8uGR3OcHSTTBqKw=s68-c-k-c0x00ffffff-no-rj">
+              <div class="body-right">
+                <h4>類Vlog | 韓國現場見證 2022 Kartrider League Season 2 個人賽冠軍！</h4>
+                <h3>爆哥Neal</h3>
+                <p>觀看次數：106,311次，20 小時前</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card">
+            <div class="card-head">
+              <img
+                src="https://i.ytimg.com/vi/Qc0p8ARyhu8/hqdefault_live.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCXeEUjeAxWTi0hjiOprTzFZ_f5vA">
+            </div>
+            <div class="card-body">
+              <img class="body-left"
+                src="https://yt3.ggpht.com/NNTqTn6wd5CWh4-ZgeNx9ai-Rv-S80FG3qfEp8fvONN3IeKjchXzt3H_6Bw8_YvrZiJSjCOC7w=s68-c-k-c0x00ffffff-no-rj">
+              <div class="body-right">
+                <h4>《關於我轉生變成史萊姆這檔事 S1-S2-OAD》 10/07 -10/25 馬拉松直播｜Muse木棉花</h4>
+                <h3>Muse木棉花-TW </h3>
+                <p>8888人正在觀看</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card">
+            <div class="card-head">
+              <img
+                src="https://i.ytimg.com/vi/3KCPp_XaFJM/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAQI1DmBKisjcDEuru-zlR7UDTyeg">
+            </div>
+            <div class="card-body">
+              <img class="body-left"
+                src="https://yt3.ggpht.com/Z9dXyCTIfrRO8AOhYJfDmQ8WPm0LImmqKPOMtAWAvWH4CXPSvFPF5OGZsXc1RA17EsukWAJSyA=s88-c-k-c0x00ffffff-no-rj">
+              <div class="body-right">
+                <h4>Siblings Singing 'Pink Sweat$ - At My Worst' ㅣ 친남매가 부르는 'Pink Sweat$ - At My Worst'🎵</h4>
+                <h3>친남매가 부르는 'Pink Sweat$</h3>
+                <p>觀看次數：757萬次，1 年前</p>
+
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card">
+            <div class="card-head">
+              <img
+                src="	https://i.ytimg.com/vi/v7bnOxV4jAc/hq720.jpg?sqp=-…AFwAcABBg==&rs=AOn4CLA-BbrAziLeGuA-10-FgEtym6bppQ">
+            </div>
+            <div class="card-body">
+              <img class="body-left"
+                src="https://yt3.ggpht.com/ytc/AMLnZu-zlk7fnoK5PIr5o9uhmr8_yHojC7DOqWXQQsFm2o0=s88-c-k-c0x00ffffff-no-rj">
+              <div class="body-right">
+                <h4>[MV] IU(아이유)_LILAC(라일락)</h4>
+                <h3>1theK (원더케이)</h3>
+                <p>觀看次數：9029萬次，1 年前</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card">
+            <div class="card-head">
+              <img
+                src="https://i.ytimg.com/vi/x8VYWazR5mE/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLARveeap-VaveE4nCmHrrjfAYn0FA">
+            </div>
+            <div class="card-body">
+              <img class="body-left"
+                src="https://yt3.ggpht.com/ytc/AMLnZu_8o8D8yLIaOLRZMOmVO0fS85nM-VlmWNJHQIJFLQ=s176-c-k-c0x00ffffff-no-rj-mo">
+              <div class="body-right">
+                <h4>YOASOBI「夜に駆ける "Racing into the Night" [1 HOUR LOOP]⏰</h4>
+                <h3>Ayase / YOASOBI</h3>
+                <p>觀看次數：2.6億次，2 年前</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card">
+            <div class="card-head">
+              <img
+                src="	https://i.ytimg.com/vi/EyI_xZKisUw/hq720.jpg?sqp=-…AFwAcABBg==&rs=AOn4CLA0c-Uqz0zNbpARKDpr5nWlZ1Xd0w">
+            </div>
+            <div class="card-body">
+              <img class="body-left"
+                src="https://yt3.ggpht.com/bDXnmnSSrPMnLF4qpcQvtOlXsr2MTqLYyqUWeF3aS7xhA-1LReKkSLD2P1fpzZZu_PiCaCNiyQ=s88-c-k-c0x00ffffff-no-rj">
+              <div class="body-right">
+                <h4>水曜日のカンパネラ『一休さん』</h4>
+                <h3>水曜日のカンパネラ</h3>
+                <p>觀看次數：1228萬次，5 年前</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card">
+            <div class="card-head">
+              <img
+                src="https://i.ytimg.com/vi/itRraQ6muJE/hq720.jpg?sqp=-…AFwAcABBg==&rs=AOn4CLDTIgmKAf6WSkQTeD0Vn_orQ4XeXQ">
+            </div>
+            <div class="card-body">
+              <img class="body-left"
+                src="https://yt3.ggpht.com/MgUUfakuPNCj-v1NbBUxzTNdxxVy1DdxN_IhSUHK-_uKdkJhE_XKoEIGmN6GRxVX4UEjyX72=s176-c-k-c0x00ffffff-no-rj-mo">
+              <div class="body-right">
+                <h4>黑歷史超多的童年回憶！小時候差點被姊姊弄死...搬來美國後感情大轉變！</h4>
+                <h3>The DoDo Men 嘟嘟人</h3>
+                <p>觀看次數：36萬次，8 個月前</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card">
+            <div class="card-head">
+              <img
+                src="https://i.ytimg.com/vi/hL0YN_WfYH4/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCB4HcKV2Oa6gP4p3aPrD-meCCAww">
+            </div>
+            <div class="card-body">
+              <img class="body-left"
+                src="https://yt3.ggpht.com/ytc/AMLnZu_WnFBAGuBx5XSn8Vv0vqWNVG3dSL5QeT49bftjjQY=s176-c-k-c0x00ffffff-no-rj-mo">
+              <div class="body-right">
+                <h4>番茄燒肉丼飯/Yakiniku & Tomato Donburi</h4>
+                <h3>MASAの料理ABC</h3>
+                <p>觀看次數：29萬次，1 個月前</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card">
+            <div class="card-head">
+              <img
+                src="	https://i.ytimg.com/vi/T16bqI6ONao/hq720.jpg?sqp=-…AFwAcABBg==&rs=AOn4CLA-YKUg8QFgge-pw0edYIuu__AFUw">
+            </div>
+            <div class="card-body">
+              <img class="body-left"
+                src="https://yt3.ggpht.com/ytc/AMLnZu8sZwZUsEqP-6kjSCymUlwZ9jLKo41VGsqupKrYdw=s176-c-k-c0x00ffffff-no-rj-mo">
+              <div class="body-right">
+                <h4>【央視一分鐘】楊丞琳稱「台灣海鮮奢侈」炎上 四川強震指引「逃命先戴口罩」｜眼球中央電視台</h4>
+                <h3>眼球中央電視台</h3>
+                <p>觀看次數：45萬次， 1 個月前</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card">
+            <div class="card-head">
+              <img
+                src="	https://i.ytimg.com/vi/0DIftINqIjo/hq720.jpg?sqp=-…AFwAcABBg==&rs=AOn4CLAqXIdHI7ORwQLmbhIBMKe6sr5kpg">
+            </div>
+            <div class="card-body">
+              <img class="body-left"
+                src="https://yt3.ggpht.com/ytc/AMLnZu8eyfd_mD6xuNv8dYD-CXPQHn1qodkzZMi_upod5w=s88-c-k-c0x00ffffff-no-rj">
+              <div class="body-right">
+                <h4>Enola Holmes 2 | Official Trailer: Part 2 </h4>
+                <h3>Netflix</h3>
+                <p>觀看次數：99萬次，17 小時前</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col">
+          <div class="card">
+            <div class="card-head">
+              <img src="	https://i.ytimg.com/vi/H68jtYM1jiw/hq720.jpg?sqp=-…AFwAcABBg==&rs=AOn4CLBW0bAl9fvXgUSMBdye1fGG4eiI2w
+                ">
+            </div>
+            <div class="card-body">
+              <img class="body-left"
+                src="https://yt3.ggpht.com/ytc/AMLnZu_QUrqCoNAhkwgG0M-zPGG3ssyBHDCk7vw3G0Himg=s176-c-k-c0x00ffffff-no-rj-mo">
+              <div class="body-right">
+                <h4>第二屆撞臉大謙大會</h4>
+                <h3>黃大謙</h3>
+                <p>觀看次數：533,540次，2021年12月28日</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card">
+            <div class="card-head">
+              <img
+                src="https://i.ytimg.com/vi/2PDYPbSf_Ko/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCiypdI_vM0M0TCn4d5hzdbyiAzdA">
+            </div>
+            <div class="card-body">
+              <img class="body-left"
+                src="https://yt3.ggpht.com/zBJDhEnXziXWWLy5ksvsffku4unfcYlZiZzBMHqFNPj95XSJ34HO-onX3RQ3lVvDhEUwCzn-=s68-c-k-c0x00ffffff-no-rj">
+              <div class="body-right">
+                <h4>BLACKPINK - Shut Down MV REACTION</h4>
+                <h3>張藝</h3>
+                <p>觀看次數：5.1萬次，3 週前</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card">
+            <div class="card-head">
+              <img
+                src="https://i.ytimg.com/vi/cqbf9B5HsVQ/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDbnkWJ8hkRYRP9PHZZNnHIdciFmQ">
+            </div>
+            <div class="card-body">
+              <img class="body-left"
+                src="	https://yt3.ggpht.com/ytc/AMLnZu8xW2RqLJWm0RrTNFUv6mGeY9DaUI8yzwRRVwgn=s68-c-k-c0x00ffffff-no-rj">
+              <div class="body-right">
+                <h4>第二美Baby Shower！Super婆婆Hold住全場！沒看過懷孕這麽正的準媽媽@Doreen</h4>
+                <h3>原來是John</h3>
+                <p>觀看次數：47,895次，10天前</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card">
+            <div class="card-head">
+              <img
+                src="	https://i.ytimg.com/vi/nQpntZV-NUg/hq720.jpg?sqp=-…AFwAcABBg==&rs=AOn4CLBRpGLF1ZwsuicICJKLpLffHJ7LPQ">
+            </div>
+            <div class="card-body">
+              <img class="body-left"
+                src="https://yt3.ggpht.com/LVB1hPsC9Q34arbI1uddFT5X_VsMvBdFve2nk8x7Sqrjn5azGQe-YMsZPAYo3SzksAWXwhQjNV8=s88-c-k-c0x00ffffff-no-rj">
+              <div class="body-right">
+                <h4>美秀集團 Amazing Show－罪愛1995 Guilty Pleasure 1995 【Official Live Video】</h4>
+                <h3>美秀集團 Amazing Show</h3>
+                <p>觀看次數：14萬次，8 天前</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</body>
+
+</html>
